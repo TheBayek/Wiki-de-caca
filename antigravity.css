@@ -7,4 +7,11 @@ color: aqua;
     text-align: center;
     background-color: black;
     font-size: large;
+
+    /* Configuration du grand arrière-plan */
+    background-image: url('caca.png');
+    background-position: center;
+    background-repeat: no-repeat; /* Empêche l'image de se répéter en petit */
+    background-attachment: fixed; /* L'image reste fixe quand on scroll */
+    background-size: cover;       /* L'image s'étire pour couvrir tout l'écran */
 }
