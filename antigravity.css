@@ -1,17 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-
-body{
-    font-family:Bangers,cursive;
-color: aqua;
+body {
+    font-family: Bangers, cursive;
+    color: aqua;
     text-align: center;
     background-color: black;
     font-size: large;
-
+    
     /* Configuration du grand arrière-plan */
     background-image: url('caca.png');
     background-position: center;
     background-repeat: no-repeat; /* Empêche l'image de se répéter en petit */
     background-attachment: fixed; /* L'image reste fixe quand on scroll */
-    background-size: 20 rem;       
+    background-size: 20rem;       
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   🚽 LE BOUTON CHASSE D'EAU NÉON
+   ========================================================== */
+
+.btn-chasse {
+    background-color: transparent;
+    color: #00ffff; /* Ton bleu cyan néon */
+    border: 3px solid #00ffff;
+    padding: 15px 30px;
+    font-family: 'Bangers', cursive; /* Ou la police de ta page */
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.btn-chasse:hover {
+    background-color: #00ffff;
+    color: black;
+    box-shadow: 0 0 30px #00ffff;
+    transform: scale(1.1) rotate(-2deg);
 }
