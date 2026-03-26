@@ -45,3 +45,57 @@ body {
     box-shadow: 0 0 30px #00ffff;
     transform: scale(1.1) rotate(-2deg);
 }
+
+
+
+
+/* ==========================================================
+   📱 JUTSU RESPONSIVE (MOBILE OPTIMIZÉ)
+   ========================================================== */
+
+/* 1. On s'assure que le corps du site ne déborde pas */
+body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Empêche le scroll horizontal moche */
+}
+
+/* 2. On adapte les titres et textes pour qu'ils soient lisibles sur tel */
+h1, h2, h3 {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word; /* Coupe les mots trop longs */
+}
+
+/* 3. L'image du caca doit rester dans l'écran ! */
+img {
+    max-width: 80%; /* Elle prendra 80% de la largeur du tel max */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* 4. Le bouton "Tirer la chasse" version XL pour les pouces */
+.btn-chasse {
+    width: 90%; /* Le bouton prend presque toute la largeur sur tel */
+    max-width: 400px;
+    padding: 20px; /* Plus gros pour cliquer facilement avec le pouce */
+    font-size: 1.2rem;
+    margin: 30px auto;
+    display: block;
+}
+
+/* 5. Ajustement spécifique pour les écrans de moins de 600px */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    p { 
+        font-size: 1rem; 
+        line-height: 1.4;
+        padding: 0 15px;
+    }
+    .btn-chasse {
+        font-size: 1rem;
+    }
+}
