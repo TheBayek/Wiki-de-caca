@@ -7,7 +7,7 @@
     <title>Le wiki du caca</title>
     <link rel="stylesheet" href="antigravity.css">
     <link rel="icon" href="caca.png">
-    <meta name="description" content="Le wiki sur les cacas de différentes espèces.">
+     <meta name="description" content="Le wiki sur les cacas de différentes espèces.">
 </head>
 
 <body>
@@ -29,6 +29,28 @@
               Il peut aussi être sous forme de boule, ou même sous forme de bouse si il y'a une maladie de ventre Sa couleur peut varier en fonction des aliments ou des maladies.
             Elle est généralement couleur marron.</p>
     </div>
+
+    <button id="btn-chasse" class="btn-chasse">🚽 TIRER LA CHASSE </button>
+
+<audio id="audio-uwu" src="uwu.mp3"></audio>
+
+
+
+
+
+<script>
+document.getElementById('btn-chasse').addEventListener('click', function() {
+    let son = document.getElementById('audio-uwu');
+    
+    // 1. On lance le son gênant !
+    son.play();
+    
+    // 2. On attend 1.5 seconde (le temps du son) avant de partir
+    setTimeout(function() {
+        window.location.href = "https://thebayek.github.io/UWU/"; // Remplace par ta page d'accueil
+    }, 1500); 
+});
+</script>
 </body>
 
 </html>
